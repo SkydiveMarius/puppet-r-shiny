@@ -1,0 +1,44 @@
+{
+  "name": "skydiveMarius-r-shiny",
+  "version": "1.0.0",
+  "author": "Marius Meissner <info@marius-meissner.net>",
+  "license": "MIT",
+  "summary": "Module for installing shiny server from RStudio",
+  "source": "https://github.com/SkydiveMarius/puppet-r-shiny",
+  "project_page": "https://github.com/SkydiveMarius/puppet-r-shiny",
+  "issues_url": "https://github.com/SkydiveMarius/puppet-r-shiny/issues",
+  "tags": [
+    "r",
+    "shiny",
+    "rstudio"
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
+        "6",
+        "7"
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "puppetlabs/stdlib",
+      "version_requirement": ">=3.2.0 <5.0.0"
+    },
+    {
+      "name": "puppetlabs/stdlib",
+      "version_requirement": ">=3.2.0 <5.0.0"
+    },
+    {
+      "name": "neilhanlon/r",
+      "version_requirement": ">=0.0.1"
+    }
+  ],
+  "requirements": [
+    {
+      "name": "puppet",
+      "version_requirement": ">=2.7.20 <5.0.0"
+    }
+  ]
+}
