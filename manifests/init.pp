@@ -19,7 +19,7 @@ class shinyserver (
   String  $site_directory  = $::shinyserver::params::site_directory,
   String  $log_directory   = $::shinyserver::params::log_directory,
   String  $directory_index = $::shinyserver::params::directory_index
-) {
+) inherits shinyserver::params {
   class{'::shinyserver::install':}
 
 }
