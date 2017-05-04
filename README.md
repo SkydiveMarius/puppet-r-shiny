@@ -10,7 +10,7 @@ include ::shinyserver
 ### Managed repository
 By default the module is using the upstream repository of RStudio (download3.rstudio.org).
 ```puppet
-class { '::redis':
+class { '::shinyserver':
   manage_repo => true,
 }
 ```
@@ -18,7 +18,7 @@ class { '::redis':
 ### Not managed repository
 In this case the module assumes, that an RPM with the name "shiny-server" is already available in the system repositories.
 ```puppet
-class { '::redis':
+class { '::shinyserver':
   manage_repo => true,
 }
 ```
