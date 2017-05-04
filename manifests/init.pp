@@ -19,8 +19,8 @@ class shinyserver (
   String  $site_directory  = $::shinyserver::params::site_directory,
   String  $log_directory   = $::shinyserver::params::log_directory,
   String  $directory_index = $::shinyserver::params::directory_index,
-  Boolean $mange_repo      = $::shinyserver::mange_repo,
-  String  $version         = $::shinyserver::version
+  Boolean $mange_repo      = $::shinyserver::params::manage_repo,
+  String  $version         = $::shinyserver::params::version
 ) inherits shinyserver::params {
   class{'::shinyserver::install':}
 
