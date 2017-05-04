@@ -11,8 +11,12 @@
 #
 # @log_directory    [String]  Log all Shiny output to files in this directory
 #
-# @directory_index  [String] When a user visits the base URL rather than a particular application,
-#                            an index of the applications available in this directory will be shown.
+# @directory_index  [String]  When a user visits the base URL rather than a particular application,
+#                             an index of the applications available in this directory will be shown.
+#
+# @mange_repo       [Boolean] Use official RStudio upstream repository or system repository for installation
+#
+# @version          [String]  Version of Shiny server (only relevant when manage_repo=true)
 #
 class shinyserver (
   Integer $port            = $::shinyserver::params::port,
